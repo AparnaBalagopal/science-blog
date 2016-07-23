@@ -24,7 +24,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 <title>Agroworld</title>
 <meta name="Keywords" content="" />
 <meta name="Description" content="" />
-<link href="default.css" rel="stylesheet" type="text/css" />
+<link href="{% static 'css/default.css' %}" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div id="header">
@@ -41,8 +41,8 @@ Released for free under a Creative Commons Attribution 2.5 License
 				<li id="menu-01"><a href="#">Home</a></li>
 				<li id="menu-02"><a href="#">Products</a></li>
 				<li id="menu-03"><a href="#">Services</a></li>
-				<li id="menu-04"><a href="#">About Us</a></li>
-				<li id="menu-05"><a href="#">Contact Us</a></li>
+				<li id="menu-04"><a href="{% url 'about' %}">About Us</a></li>
+				<li id="menu-05"><a href="{% url 'contact' %}">Contact Us</a></li>
 			</ul>
 		</div>
 		<div class="margin-news">
@@ -54,8 +54,8 @@ Released for free under a Creative Commons Attribution 2.5 License
 
 	<div id="colTwo">
 		<h2>Welcome to Agroworld.com!</h2>
-		<p><strong>Agroworld </strong>is a free template from <a href="http://www.freecsstemplates.org/"><strong>Free CSS Templates</strong></a> released under a <a href="http://creativecommons.org/licenses/by/2.5/"><strong>Creative Commons Attribution 2.5</strong> License</a>. You're free to use it for both commercial or personal use. I only ask that you link back to <a href="http://www.freecsstemplates.org/">my site</a> in some way. Enjoy :)</p>
-		<p>Suspendisse potenti. Donec nulla est, laoreet quis, pellentesque in, congue in, dui. Nunc rhoncus placerat augue. Donec justo odio, eleifend varius, volutpat venenatis, sagittis ut, orci. Donec nulla est, laoreet quis, pellentesque in, congue in, dui. Nunc rhoncus placerat augue. Donec justo odio, eleifend varius, volutpat venenatis, sagittis ut, orci. Nullam et orci in erat viverra ornare. Nunc pellentesque. Sed vestibulum blandit nisl. Quisque elementum convallis purus. Quisque pellentesque semper massa.</p>
+		<p><strong>Agroworld </strong>is not crop production as popular belief holds- it's the production of food and fiber from the world's land and waters.Without agriculture it is not possible to have a city,stock market,banks etc.Agriculture is the foundation of civilization and any stable economy.</p>
+		
 		<ul>
 			<li><a href="#">Suspendisse quis gravida massa felis.</a></li>
 			<li><a href="#">Vivamus sagittis bibendum erat.</a></li>
