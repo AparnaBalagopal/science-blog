@@ -96,7 +96,7 @@ a:hover {
 /* Content */
 
 #content {
-	width: 700px;
+	width: 1000px;
 	margin: 0 auto;
 	padding-top: 10px;
 	border: 10px solid #FFFFFF;
@@ -114,8 +114,8 @@ a:hover {
 #colTwo {
 	float: right;
 	margin-top: 20px;
-	width: 440px;
-	padding: 0 20px 0 20px;
+	width: 700px;
+	padding: 20px 20px 0px 0px;
 }
 
 #content h2 {
