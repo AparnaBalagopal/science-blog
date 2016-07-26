@@ -20,9 +20,9 @@ h1, h2, h3, h4, h5 {
 /* Header */
 
 #header {
-	width: 700px;
+	width: 800px;
 	margin: 0 auto;
-	color: #808080;
+	color: #FFFFFF;
 }
 
 #header h1 {
@@ -96,13 +96,13 @@ a:hover {
 /* Content */
 
 #content {
-	width: 1000px;
+	width: 1100px;
 	margin: 0 auto;
-	padding-top: 10px;
+	padding-top: 0px;
 	border: 10px solid #FFFFFF;
 	border-top: none;
 	background: #E9EAE2;
-	
+
 }
 
 #colOne {
