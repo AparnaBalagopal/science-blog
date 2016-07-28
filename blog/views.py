@@ -20,3 +20,8 @@ def about(request):
 def contact(request):
 	return render(request, 'blog/contact.html', {})
 
+def vegetables(request):
+	return render(request, 'blog/vegetables.html', {})
+
+def fruits(request):
+	return render(request, 'blog/fruits.html', {})
