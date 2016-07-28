@@ -2,6 +2,7 @@ from django.shortcuts import render
 from .models import Post
 from django.shortcuts import render, get_object_or_404
 from django.shortcuts import redirect
+from .forms import PostForm
 
 
 def home(request):
@@ -25,3 +26,7 @@ def vegetables(request):
 
 def fruits(request):
 	return render(request, 'blog/fruits.html', {})
+
+def post_new(request):
+    form = PostForm()
+    return render(request, 'blog/post_edit.html', {'form': form})
