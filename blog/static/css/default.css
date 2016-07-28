@@ -23,6 +23,8 @@ h1, h2, h3, h4, h5 {
 	width: 800px;
 	margin: 0 auto;
 	color: #FFFFFF;
+	
+
 }
 
 #header h1 {
@@ -30,6 +32,8 @@ h1, h2, h3, h4, h5 {
 	margin: 0px 0 0 0px;
 	font-size: 50px;
 	letter-spacing: -7px;
+	
+
 }
 
 #header h2 {
@@ -48,6 +52,7 @@ a {
 a:hover {
 	color: #555E4F;
 	text-decoration: none;
+
 }
 
 /* Menu */
@@ -121,7 +126,7 @@ a:hover {
 
 #content h2 {
 	margin-bottom: 20px;
-	font-size: 18px;
+	font-size: 24px;
 	letter-spacing: -1px;
 	color: #808080;
 }
