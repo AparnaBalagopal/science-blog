@@ -26,6 +26,11 @@ Released for free under a Creative Commons Attribution 2.5 License
 <meta name="Keywords" content="" />
 <meta name="Description" content="" />
 <link href="{% static 'css/default.css' %}" rel="stylesheet" type="text/css" />
+
+<style>
+.mySlides {display:none;}
+</style>
+
 </head>
 <body>
 <div id="header">
@@ -37,7 +42,27 @@ Released for free under a Creative Commons Attribution 2.5 License
 </div>
 	<div style="clear: both;">&nbsp;</div>
 <div id="content">
-	<div><center><img src="{% static "blog/img4.jpg" %}" style="width: 950px; height: 450px;" /></center></div>
+	<center><img class="mySlides" src="{% static "blog/img4.jpg" %}" style="width: 950px; height: 450px;" />
+	<img class="mySlides" src="{% static "blog/gauva.jpeg" %}" style="width: 950px; height: 450px;" />
+	<img class="mySlides" src="{% static "blog/lady's finger 2.jpg" %}" style="width: 950px; height: 450px;" />
+
+	</center>
+	<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
 	
 	<div id="colOne">
 		<div id="menu1">
