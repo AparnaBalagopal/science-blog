@@ -11,8 +11,8 @@ def home(request):
 def products(request):
     return render(request, 'blog/products.html', {})
 
-def services(request):
-    return render(request, 'blog/services.html', {})
+def images(request):
+    return render(request, 'blog/images.html', {})
 
 
 def about(request):

@@ -43,8 +43,8 @@ Released for free under a Creative Commons Attribution 2.5 License
 	<div style="clear: both;">&nbsp;</div>
 <div id="content">
 	<center><img class="mySlides" src="{% static "blog/img4.jpg" %}" style="width: 950px; height: 450px;" />
-	<img class="mySlides" src="{% static "blog/gauva.jpeg" %}" style="width: 950px; height: 450px;" />
-	<img class="mySlides" src="{% static "blog/lady's finger 2.jpg" %}" style="width: 950px; height: 450px;" />
+	<img class="mySlides" src="{% static "blog/fru.jpg" %}" style="width: 950px; height: 450px;" />
+	<img class="mySlides" src="{% static "blog/veg.jpg" %}" style="width: 950px; height: 450px;" />
 
 	</center>
 	<script>
@@ -63,6 +63,7 @@ function carousel() {
     setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 </script>
+
 	
 	<div id="colOne">
 		<div id="menu1">
@@ -70,8 +71,8 @@ function carousel() {
 				<li id="menu-01"><a href="/">Home</a></li>
 				<li id="menu-02"><a href="{% url 'about' %}">About Us</a></li>
 				<li id="menu-03"><a href=" {% url 'products' %} ">Products</a></li>
-
-				<li id="menu-04"><a href="{% url 'contact' %}">Contact Us</a></li>
+				<li id="menu-04"><a href=" {% url 'images' %} ">Images</a></li>
+				<li id="menu-05"><a href="{% url 'contact' %}">Contact Us</a></li>
 			</ul>
 		</div>
 		<div class="margin-news">
@@ -92,6 +93,6 @@ function carousel() {
 	</div>
 	<div style="clear: both;">&nbsp;</div>
 </div>
-
+</center></div>
 </body>
 </html>
