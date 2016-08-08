@@ -66,6 +66,7 @@ function carousel() {
     setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 </script>
+<marquee><font color="red" size="5">News:</font><font color="green" size="5">updrade</marquee></font>
 
 	
 	<div id="colOne">
@@ -73,9 +74,10 @@ function carousel() {
 			<ul>
 				<li id="menu-01"><a href="/">Home</a></li>
 				<li id="menu-02"><a href="{% url 'about' %}">About Us</a></li>
-				<li id="menu-03"><a href=" {% url 'products' %} ">Products</a></li>
-				<li id="menu-04"><a href=" {% url 'images' %} ">Images</a></li>
-				<li id="menu-05"><a href="{% url 'contact' %}">Contact Us</a></li>
+				<li id="menu-03"><a href="{% url 'crops' %}">Crops</a></li>
+				<li id="menu-04"><a href=" {% url 'products' %} ">Products</a></li>
+				<li id="menu-05"><a href=" {% url 'images' %} ">Images</a></li>
+				<li id="menu-06"><a href="{% url 'contact' %}">Contact Us</a></li>
 			</ul>
 		</div>
 		<div class="margin-news">

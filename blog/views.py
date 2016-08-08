@@ -12,6 +12,9 @@ def home(request):
 def products(request):
     return render(request, 'blog/products.html', {})
 
+def crops(request):
+    return render(request, 'blog/crops.html', {})
+
 def images(request):
     return render(request, 'blog/images.html', {})
 
@@ -36,7 +39,7 @@ def post_new(request):
             post.author = request.user
             post.published_date = timezone.now()
             post.save()
-            return redirect('blog/home.html', pk=post.pk)
+            return redirect('about', pk=post.pk)
     else:
         form = PostForm()
     return render(request, 'blog/post_edit.html', {'form': form})
