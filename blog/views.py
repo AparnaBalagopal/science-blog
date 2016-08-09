@@ -31,6 +31,12 @@ def vegetables(request):
 def fruits(request):
 	return render(request, 'blog/fruits.html', {})
 
+def spices(request):
+    return render(request, 'blog/spices.html', {})
+
+def tubers(request):
+    return render(request, 'blog/tubers.html', {})
+
 def post_new(request):
     if request.method == "POST":
         form = PostForm(request.POST)
