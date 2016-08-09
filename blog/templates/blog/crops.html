@@ -19,25 +19,7 @@
 <meta name="Description" content="" />
 <link href="{% static 'css/default.css' %}" rel="stylesheet" type="text/css" />
 
-<style>
-  table {
-    border-collapse: collapse;
-    width: 100%;
-}
 
-th, td {
-    text-align: left;
-    padding: 10px;
-}
-
-tr:nth-child(even){background-color: #f2f2f2}
-
-th {
-    background-color: #4CAF50;
-    color: white;
-}
-
-</style>
 
 
 </head>
@@ -52,6 +34,7 @@ th {
 <ul>
 <li id="menu-01"><a href="/">Home</a></li>
 <li id="menu-02"><a href="{% url 'about' %}">About Us</a></li>
+<li id="menu-03"><a href="{% url 'crops' %}">Crops</a></li>
 <li id="menu-03"><a href=" {% url 'products' %} ">Products</a></li>
 <li id="menu-04"><a href=" {% url 'images' %} ">Images</a></li>
 <li id="menu-05"><a href="{% url 'contact' %}">Contact Us</a></li>
@@ -59,145 +42,82 @@ th {
 </div>
 </div>
 <div id="colTwo">
-<h1><u>Crop Varieties</u></h1><br>
+<h1><u>Crop details</u></h1><br>
+<h4><b>* Choice of crops and varieties</b></h4><br>
+<p>
+All species and varieties that are cultivated should be adapted to the soil and climatic
+conditions and be naturally resistant to pest and disease of the region. All seeds and planting
+materials should be from crops of organic cultivation. When organic planting materials are
+not available, chemically untreated conventional planting materials shall be used initially.
+The use of genetically engineered seeds, pollen, transgenic plants and plant materials is not
+allowed.
+  </p><br>
+<h4><b>
+* Conversion period
+</h4></b><br>
+ <p>
+The establishment of an organic management system and building of soil fertility requires
+an interim period, the conversion period. The duration of the conversion period will depend
+upon<br>
+i. The past use of the land<br>
+ii.The ecological situation<br>
+The plant products produced annually can be certified organic when the national
+standards requirements have been met during a conversion period of atleast two years
+before sowing or in the case of perennial crops other than grassland, atleast 3 years before
+the first harvest of the products. Conversion period can be extended by the certification
+program depending on the past use of the land and environmental conditions. The accredited
+certification program may allow plant products to be sold as “produce of organic agriculture
+in process of conversion” when these national standards stipulation have been met for at
+least 12 months</p> <br>
 
-<table>
-  <tr>
-    <th><font size="3">SlNo</font></th>
-    <th><font size="3">Common name</font></th>
-    <th><font size="3">Malayalam name</font></th>
-  </tr>
-  
-  <tr>
-    <td></td>
-    <td><center><font size="2"><b><u>Vegetables</b></u></font></center></td>
-    <td></td>
-</tr>
-<tr>
-    <td>1</td>
-    <td>Brinjal </td>
-    <td>Vazhuthana</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>Okra </td>
-    <td>Venda</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>Tomato </td>
-    <td>Thakkali</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>Drumstick</td>
-    <td>Muringa</td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>Pumpkin</td>
-    <td>Mathan</td>
-  </tr>
-  <tr>
-    <td>6</td>
-    <td>Ash gourd </td>
-    <td>Kumbalam</td>
-  </tr>
-  <tr>
-    <td>7</td>
-    <td>Bitter gourd</td>
-    <td>Paval</td>
-  </tr>
-  <tr>
-    <td>8</td>
-    <td>Chilli </td>
-    <td>Mulaku</td>
-  </tr>
+<h4><b>* Manurial Policy</b></h4><br>
+<p>
+Sufficient quantities of biodegradable materials of microbial, plant or animal origin
+should be returned to the soil to increase or atleast maintain its fertility and the biological
+activity within it. Organic material must be the product of organic farms and the farms must
+become self sufficient in producing such organic material
+Soil fertility should be maintained or enhanced by
+<ul>
+<li>Raising green manure crops, leguminous crops</li>
+<li>Incorporate crops residues</li>
+<li>Use biodegradable materials of microbial, plant or animal origin</li>
+<li>Encourage the use of on - farm organic inputs</li>
+<li>Use of synthetic or chemical fertilizers and growth regulators are not permitted</li>
+<li>Mineral based materials like rock phosphate, gypsum, lime etc in limited quantities and in their natural compositions.</li>
+<li>Prevent the accumulation of heavy metals and other pollutants</li>
+<li>Minimize the nutrient loss by management practices</li>
+<li>Apply manures as per soil test results</li>
+<li>Maintain adequate p H levels</li></ul>
+</p><br>
 
-  <tr>
-  <td></td>
-<td><center><font size="2"><u><b>Tubers</b></font></u></center></td>
-<td></td>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>Colocasia</td>
-    <td>Chembu</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>Elephant foot Yam</td>
-    <td>Chena</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>Tapioca</td>
-    <td>Maracheeni</td>
-  </tr>
-
-  <tr>
-  <td></td>
-<td><center><font size="2"><u><b>Fruits</b></u></font></center></td>
-<td></td>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>Mango </td>
-    <td>Manga</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>Jackfruit</td>
-    <td>Chakka</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>Banana</td>
-    <td>Pazham</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>Guava</td>
-    <td>Perakka</td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>Grapes</td>
-    <td>Munthiri</td>
-  </tr>
-  <tr>
-    <td>6</td>
-    <td>Lemon </td>
-    <td>Naranga</td>
-  </tr>
-  <tr>
-    <td>7</td>
-    <td>Sweet-sop</td>
-    <td>Seethapazham</td>
-  </tr>
-
-  <tr>
-  <td></td>
-<td><center><font size="2"><b><u>Spices</b></u></font></center></td>
-<td></td>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>Pepper</td>
-    <td>Kurumulaku</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>Turmeric</td>
-    <td>Manjal</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>Ginger</td>
-    <td>Inji</td>
-  </tr>
-</table>
-
+<h4><b>* Pests, diseases and weed management</b></h4><br>
+<p>Organic farming systems should be carried out in a way, which ensures that losses
+from pests, diseases and weeds are minimized. Conditions for minimizing the loss due to
+pests, diseases and weeds are<ul>
+1. Balanced manurial programme<br>
+2. Use of crops and varieties well adapted to the environment<br>
+3. Fertile soil of high biological activities<br>
+4. Adopt rotations<br>
+5. Companion planting<br>
+6. Green manuring<br>
+7. Natural enemies of pests and diseases should be protected and encouraged.<br>
+8. Cultivate trap crops</p><br><br>
+<h5><b>Pest and disease control</b></h5>
+<ul>
+  <p><li>Prohibit the use of synthetic chemicals</li>
+<li>Use preventive cultural techniques</li>
+<li>Encourage and protect natural enemies</li>
+<li>Use products from local plants and of biological origin prepared at the farm.</li>
+<li>Prohibit the use of genetically engineered organisms and products</li>
+<li>Brand name products must always be evaluated</li></ul><br>
+<h5><b>Weed control</b></h5><br>
+<p><ul>
+<li>Slash weeding</li>
+<li>Use mechanical weed control</li>
+<li>Use weeded materials as much</li>
+<li>Use clean equipments for organically managed areas</li>
+<li>Use of synthetic herbicides, synthetic growth regulators and synthetic dyes are prohibited</li></ul>
+</p>
 </div>
 <div style="clear: both;">&nbsp;</div>
 </div>

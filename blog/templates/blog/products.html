@@ -1,96 +1,207 @@
 
 {% load staticfiles %}
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!--
-Design by Free CSS Templates
-http://www.freecsstemplates.org
-Released for free under a Creative Commons Attribution 2.5 License
--->
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="{% static 'css/default.css' %}">
-    <link href="//fonts.googleapis.com/css?family=Leckerli+One" rel="stylesheet" type="text/css">
-    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="{% static 'css/default.css' %}">
+<link href="//fonts.googleapis.com/css?family=Leckerli+One" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Agroworld</title>
 <meta name="Keywords" content="" />
 <meta name="Description" content="" />
 <link href="{% static 'css/default.css' %}" rel="stylesheet" type="text/css" />
+
+<style>
+  table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+</style>
+
+
 </head>
 <body>
 <div id="header">
-	<h1><font color="#2FA803">AGRO</font>WORLD</h1>
-	
+<h1><font color="#2FA803">AGRO</font>WORLD</h1>
 </div>
-	<div style="clear: both;">&nbsp;</div>
-<div id="content">
-	
-	
-	<div id="colOne">
-		<div id="menu1">
-			<ul>
-				<li id="menu-01"><a href="/">Home</a></li>
-				<li id="menu-02"><a href="{% url 'about' %}">About Us</a></li>
-				<li id="menu-03"><a href="{% url 'crops' %}">Crops</a></li>
-				<li id="menu-03"><a href=" {% url 'products' %} ">Products</a></li>
-				<li id="menu-04"><a href=" {% url 'images' %} ">Images</a></li>
-				<li id="menu-05"><a href="{% url 'contact' %}">Contact Us</a></li>
-			</ul>
-		
-
-		</div>
-		</div>
-
-<div id="colTwo">
-		<h1><u> Products</h1></u><br>
-
-		
-		<h4><strong>Agroworld</strong> produces high quality <strong>Vegetables</strong>,<strong>Fruits</strong>,<strong>Tubers</strong> and <strong>Spices</strong>.No Pesticides in production.Grown with natural fertilizers (manure, compost).Weeds are controlled naturally (crop rotation, hand weeding, mulching, and tilling).Insects are controlled using natural methods (birds, good insects, traps).</h4><br><br>
-		<div>
-		<h5><b>VEGETABLES</h5></b><br>
-		<ul>
-		<li>LADY'S FINGER </li>
-		<li>BRINJAL</li>
-		<li>PUMPKIN</li>
-		<li>ASH GUARD</li>
-		<li>DRUMSTICK</li>
-		<li>BITTER GUARD</li>
-		<li>BEANS</li>
-		<li>TOMATO</li>
-		<li>CUCUMBER</li>
-		<li>SPINACH (Green,Red)</li>
-		<li>YAM</li>
-		<li>TAPIOCA</li>
-		<li>GINGER</li>
-		<li>TURMERIC</li>
-		<li>GREEN CHILLIES</li>
-		</ul><br></b></h5></div>
-		
-		<div>
-		<h5><b>FRUITS</h5></b><br>
-		<ul>
-		<li>MANGOES</li>
-		<li>JACKFRUIT</li>
-		<li>GUAVA</li>
-		<li>PASSION FRUIT</li>
-		<li>LEMON</li>
-		<li>GOOSEBERRY</li>
-		<li>BANANA</li>
-		</ul></b></h5></div>
-	</div>
-
-	
 <div style="clear: both;">&nbsp;</div>
-		</div>
-		</body>
-		</html>
+<div id="content">
+<div id="colOne">
+<div id="menu1">
+<ul>
+<li id="menu-01"><a href="/">Home</a></li>
+<li id="menu-02"><a href="{% url 'about' %}">About Us</a></li>
+<li id="menu-03"><a href=" {% url 'products' %} ">Products</a></li>
+<li id="menu-04"><a href=" {% url 'images' %} ">Images</a></li>
+<li id="menu-05"><a href="{% url 'contact' %}">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div id="colTwo">
+<h1><u>Products</u></h1><br>
+
+<h4><strong>Agroworld</strong> produces high quality <strong>Vegetables</strong>,<strong>Fruits</strong>,<strong>Tubers</strong> and <strong>Spices</strong> which are grown with natural fertilizers (manure, compost).</h4><br>
+
+<table>
+  <tr>
+    <th><font size="3">SlNo</font></th>
+    <th><font size="3">Common name</font></th>
+    <th><font size="3">Malayalam name</font></th>
+  </tr>
+  
+  <tr>
+    <td></td>
+    <td><center><font size="2"><b><u>Vegetables</b></u></font></center></td>
+    <td></td>
+</tr>
+<tr>
+    <td>1</td>
+    <td>Brinjal </td>
+    <td>Vazhuthana</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Okra </td>
+    <td>Venda</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Tomato </td>
+    <td>Thakkali</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Drumstick</td>
+    <td>Muringa</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Pumpkin</td>
+    <td>Mathan</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Ash gourd </td>
+    <td>Kumbalam</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Bitter gourd</td>
+    <td>Paval</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Chilli </td>
+    <td>Mulaku</td>
+  </tr>
+
+  <tr>
+  <td></td>
+<td><center><font size="2"><u><b>Tubers</b></font></u></center></td>
+<td></td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Colocasia</td>
+    <td>Chembu</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Elephant foot Yam</td>
+    <td>Chena</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Tapioca</td>
+    <td>Maracheeni</td>
+  </tr>
+
+  <tr>
+  <td></td>
+<td><center><font size="2"><u><b>Fruits</b></u></font></center></td>
+<td></td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Mango </td>
+    <td>Manga</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Jackfruit</td>
+    <td>Chakka</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Banana</td>
+    <td>Pazham</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Guava</td>
+    <td>Perakka</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Grapes</td>
+    <td>Munthiri</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Lemon </td>
+    <td>Naranga</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Sweet-sop</td>
+    <td>Seethapazham</td>
+  </tr>
+
+  <tr>
+  <td></td>
+<td><center><font size="2"><b><u>Spices</b></u></font></center></td>
+<td></td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Pepper</td>
+    <td>Kurumulaku</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Turmeric</td>
+    <td>Manjal</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Ginger</td>
+    <td>Inji</td>
+  </tr>
+</table>
+
+</div>
+<div style="clear: both;">&nbsp;</div>
+</div>
+</body>
+</html>
