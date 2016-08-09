@@ -41,6 +41,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 			<ul>
 				<li id="menu-01"><a href="/">Home</a></li>
 				<li id="menu-02"><a href="{% url 'about' %}">About Us</a></li>
+				<li id="menu-03"><a href="{% url 'crops' %}">Crops</a></li>
 				<li id="menu-03"><a href=" {% url 'products' %} ">Products</a></li>
 				<li id="menu-04"><a href=" {% url 'images' %} ">Images</a></li>
 				<li id="menu-05"><a href="{% url 'contact' %}">Contact Us</a></li>
@@ -53,11 +54,25 @@ Released for free under a Creative Commons Attribution 2.5 License
 <div id="colTwo">
 		<h1><u>Fruits</u></h1><br>
 
-		<div><img src="{% static "blog/mango.jpg" %}" style="width: 250px; height: 150px;" /></div>
-		<div><img src="{% static "blog/gauva.jpeg" %}" style="width: 250px; height: 150px;" /></div>
+		<div><h4><center>Gauva</center><br><br></h4><img src="{% static "blog/gauva.jpeg" %}" style="width: 250px; height: 200px;" />
+		<img src="{% static "blog/images-1.jpeg" %}" style="width: 250px; height: 200px;" align="right" /></div>
+		<br><br>
+
+<div><h4><center>Mango</center><br><br></h4><img src="{% static "mango2.jpg" %}" style="width: 250px; height: 200px;" />
+		<img src="{% static "blog/mango.jpg" %}" style="width: 250px; height: 200px;" align="right" /></div>
+		<br><br>
+
+		<div><h4><center>Plantain</center><br><br></h4><img src="{% static "blog/banana.jpg" %}" style="width: 250px; height: 200px;" />
+		<img src="{% static "blog/plantain.jpeg" %}" style="width: 250px; height: 200px;" align="right" /></div>
+		<br><br>
 		
-		<div><img src="{% static "blog/jackfruit.jpeg" %}" style="width: 250px; height: 150px;" /></div>
-		<div><img src="{% static "blog/plantain.jpeg" %}" style="width: 250px; height: 150px;" /></div>
+<div><h4><center>Passion Fruit</center><br><br></h4><img src="{% static "blog/passion.jpg" %}" style="width: 250px; height: 200px;" />
+		<img src="{% static "blog/pasion.jpg" %}" style="width: 250px; height: 200px;" align="right" /></div>
+		<br><br>
+
+<div><h4><center>Grapes</center><br><br></h4><center><img src="{% static "blog/grapes.jpg" %}" style="width: 250px; height: 200px;" /></center></div><br><br>
+
+<div><h4><center>Gooseberry</center><br><br></h4><center><img src="{% static "blog/gooseberry.jpg" %}" style="width: 250px; height: 200px;" /></center></div><br><br>
 		
 	</div>
 <div style="clear: both;">&nbsp;</div>

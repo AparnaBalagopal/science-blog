@@ -1,26 +1,18 @@
 
 {% load staticfiles %}
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!--
-Design by Free CSS Templates
-http://www.freecsstemplates.org
-Released for free under a Creative Commons Attribution 2.5 License
--->
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="{% static 'css/default.css' %}">
-    <link href="//fonts.googleapis.com/css?family=Leckerli+One" rel="stylesheet" type="text/css">
-    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="{% static 'css/default.css' %}">
+<link href="//fonts.googleapis.com/css?family=Leckerli+One" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Agroworld</title>
 <meta name="Keywords" content="" />
@@ -29,37 +21,42 @@ Released for free under a Creative Commons Attribution 2.5 License
 </head>
 <body>
 <div id="header">
-	<h1><font color="#2FA803">AGRO</font>WORLD</h1>
-	
+<h1><font color="#2FA803">AGRO</font>WORLD</h1>
 </div>
-	<div style="clear: both;">&nbsp;</div>
-<div id="content">
-	
-	<div id="colOne">
-		<div id="menu1">
-			<ul>
-				<li id="menu-01"><a href="/">Home</a></li>
-				<li id="menu-02"><a href="{% url 'about' %}">About Us</a></li>
-				<li id="menu-03"><a href=" {% url 'products' %} ">Products</a></li>
-				<li id="menu-04"><a href=" {% url 'images' %} ">Images</a></li>
-				<li id="menu-05"><a href="{% url 'contact' %}">Contact Us</a></li>
-			</ul>
-		
-
-		</div>
-		</div>
-
-<div id="colTwo">
-		<h1><u>Vegetables</u></h1><br>
-
-		<div><img src="{% static "blog/lady's finger.jpeg" %}" style="width: 250px; height: 150px;" /></div>
-		<div><img src="{% static "blog/pumpkin.jpg" %}" style="width: 250px; height: 150px;" /></div>
-		<div><img src="{% static "blog/turmeric2.jpg" %}" style="width: 250px; height: 150px;" /></div>
-		<div><img src="{% static "blog/brinjal.jpg" %}" style="width: 250px; height: 150px;" /></div>
-		<div><img src="{% static "blog/beans.jpg" %}" style="width: 250px; height: 150px;" /></div>
-<div><img src="{% static "blog/tapiocca.jpg" %}" style="width: 250px; height: 150px;" /></div>
-	</div>
 <div style="clear: both;">&nbsp;</div>
-		</div>
-		</body>
-		</html>
+<div id="content">
+<div id="colOne">
+<div id="menu1">
+<ul>
+<li id="menu-01"><a href="/">Home</a></li>
+<li id="menu-02"><a href="{% url 'about' %}">About Us</a></li>
+<li id="menu-03"><a href="{% url 'crops' %}">Crops</a></li>
+<li id="menu-03"><a href=" {% url 'products' %} ">Products</a></li>
+<li id="menu-04"><a href=" {% url 'images' %} ">Images</a></li>
+<li id="menu-05"><a href="{% url 'contact' %}">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div id="colTwo">
+<h1><u>Vegetables</u></h1><br>
+
+<div><h4><center>Lady's Finger</center><br><br></h4><img src="{% static "blog/lady's finger.jpeg" %}" style="width: 250px; height: 200px;" />
+		<img src="{% static "blog/lady's finger 2.jpg" %}" style="width: 250px; height: 200px;" align="right" /></div>
+<br><br>
+<div><h4><center>Brinjal</center><br><br></h4><img src="{% static "blog/brinjal (2).jpg" %}" style="width: 250px; height: 200px;" />
+		<img src="{% static "blog/violet brinja.jpg" %}" style="width: 250px; height: 200px;" align="right" /></div>
+		
+		<br><br>
+<div><h4><center>Peas</center><br><br></h4><img src="{% static "blog/peas.jpg" %}" style="width: 250px; height: 200px;" />
+		<img src="{% static "blog/beans.jpg" %}" style="width: 250px; height: 200px;" align="right" /></div>
+		<br><br>
+
+<div><h4><center>Pumpkin</center><br><br></h4><center><img src="{% static "blog/pumpkin.jpg" %}" style="width: 250px; height: 200px;" /></center></div><br><br>
+<div><h4><center>Tapiocca</center><br><br></h4><center><img src="{% static "blog/tapioca.jpg" %}" style="width: 250px; height: 200px;" /></center></div><br><br>
+<div><h4><center>Spinach</center><br><br></h4><center><img src="{% static "blog/cheera copy.jpg" %}" style="width: 250px; height: 200px;" /></center></div><br><br>
+
+</div>
+<div style="clear: both;">&nbsp;</div>
+</div>
+</body>
+</html>
