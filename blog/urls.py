@@ -12,5 +12,6 @@ urlpatterns = [
     url(r'^fruits/$', views.fruits, name='fruits'),
     url(r'^spices/$', views.spices, name='spices'),
     url(r'^tubers/$', views.tubers, name='tubers'),
+    url(r'^privacy/$', views.privacy, name='privacy'),
     url(r'^post/new/$', views.post_new, name='post_new'),
 ]

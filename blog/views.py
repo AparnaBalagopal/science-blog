@@ -36,6 +36,8 @@ def spices(request):
 
 def tubers(request):
     return render(request, 'blog/tubers.html', {})
+def privacy(request):
+    return render(request, 'blog/privacy.html', {})
 
 def post_new(request):
     if request.method == "POST":
