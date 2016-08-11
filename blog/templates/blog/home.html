@@ -37,7 +37,8 @@ Released for free under a Creative Commons Attribution 2.5 License
 {% if user.is_authenticated %}
        <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
        {% endif %}
-	<h1><font color="#2FA803"> AGRO</font>WORLD</h1>
+       <img src="{% static "blog/aw.png" %}" style="width:35px; height: 35px;" align="left" />
+	&nbsp;&nbsp;<center><h1><font color="#2FA803"> AGRO</font>WORLD</h1>
 	
 </div>
 	<div style="clear: both;">&nbsp;</div>
@@ -108,7 +109,7 @@ Lemongrass suspension (10%) can also be used for the control. </p>
 	<div style="clear: both;">&nbsp;</div>
 </div>
 <div id="footer">
-	<p>&copy; 2016,all rights reserved &nbsp;&nbsp;&nbsp;<a href="{% url 'privacy' %}">Privacy Policy</a></p>
+	<p>Copyright&copy; 2016&nbsp;Agroworld.pythonanywhere.com.&nbsp;All Rights Reserved &nbsp;&nbsp;&nbsp;<a href="{% url 'privacy' %}">Privacy Policy</a></p>
 </div>
 </center></div>
 </body>
